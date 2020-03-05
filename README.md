@@ -1,4 +1,4 @@
-# todolist
+# todoList Vue App
 
 ## Project setup
 ```
