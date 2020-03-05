@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Header />
     <AddTodo v-on:add-todo="addTodo" />
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
   </div>
@@ -8,7 +7,6 @@
 
 <script>
 import axios from 'axios';
-import Header from '../components/layout/Header.vue';
 import Todos from '../components/Todos.vue';
 import AddTodo from '../components/AddTodo.vue';
 
@@ -16,7 +14,6 @@ export default {
   name: 'Home',
   components: {
     Todos,
-    Header,
     AddTodo,
   },
   data() {
