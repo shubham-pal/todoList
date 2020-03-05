@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="home">
     <AddTodo v-on:add-todo="addTodo" />
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
   </div>
@@ -32,6 +32,7 @@ export default {
   created() {
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
       .then((res) => { this.todos = res.data; })
+      // eslint-disable-next-line no-console
       .catch((err) => console.log(err));
   },
 };
