@@ -1,6 +1,6 @@
 # todoList Vue App
 
-### Link: [TodoList](www.todolist-temp.netlify.com)
+### Link: [TodoList](https://todolist-temp.netlify.com/)
 
 ## Project setup
 ```
